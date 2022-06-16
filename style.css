@@ -1,0 +1,265 @@
+body {
+    background-color: black;
+    overflow-x: hidden; /* Cache la scrollbar horizontal */
+  }
+body .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 1;
+} 
+  header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+  }
+  
+  /* Image statique au cas ou HTML5 n'est pas supporté */
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('./ND_fallback.png') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+  /* Bouton sur la page d'accueil */
+  #bouton {
+    background-color: transparent;
+    border-color: rgb(53, 212, 0);
+    color: rgb(53, 212, 0);
+  }
+  #bouton:hover {
+    background-color: rgb(53, 212, 0);
+    transition: 0.7s;
+    color: white;
+}
+.logo {
+  font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+#bouton {
+  background-color: transparent;
+  border-color: rgb(53, 212, 0);
+  color: rgb(53, 212, 0);
+}
+#bouton:hover {
+  background-color: rgb(53, 212, 0);
+  transition: 0.7s;
+  color: white;
+}
+p, h2, h3, h4 {
+  color: white;
+}
+.fas {
+  color: rgb(53, 212, 0);
+}
+.grad {
+  background-image: linear-gradient(black, rgb(46, 46, 46), black);
+}
+/* Style de la page Contact */
+/* Map + Overlay transparent par dessus */
+.map-container-4{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+z-index: 1;
+}
+.map-container-4 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+z-index: 3;
+}
+.overlay1 {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: 0.5;
+z-index: 5;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style du bouton d'envoi */
+input[type=submit] {
+background-color: transparent;
+color: rgb(53, 212, 0);
+padding: 12px 20px;
+border-color: rgb(53, 212, 0);
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* Quand on bouge le curseur sur le bouton d'envoi il change de couleur */
+input[type=submit]:hover {
+background-color: rgb(53, 212, 0);
+color: white;
+}
+
+/* Ajout du fond de couleur et le padding du formulaire */
+.formulaire {
+width: 1000px;
+border-radius: 5px;
+background-image: linear-gradient(black, rgb(46, 46, 46), black);
+padding: 20px;
+position: relative;
+z-index: 7;
+margin: auto;
+margin-top: 150px;
+}
+header {
+position: relative;
+background-color: black;
+height: 75vh;
+min-height: 25rem;
+width: 100%;
+overflow: hidden;
+}
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(black, rgb(9, 0, 24));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.faqs {
+  color: white;
+}
+.accordion-item {
+  background-image: linear-gradient(black, rgb(46, 46, 46), black);
+}
+.accordion-button {
+  color: rgb(53, 212, 0);
+  background-image: linear-gradient(black, rgb(46, 46, 46), black);
+}
+.accordion-button.collapsed::after {
+  content: "\f0d7"; /* far fa-caret-square-down */
+  font-family: 'FontAwesome';
+  color: rgb(53, 212, 0);
+}
+.accordion-button:not(.collapsed)::after {
+  content: "\f0d7"; /* far fa-caret-square-down */
+  font-family: 'FontAwesome';
+  color: rgb(53, 212, 0);
+}
+/* CSS pour le gameboy */
+.game-area {
+  display: flex;
+  justify-content: center;
+}
+.jeutitre {
+  text-align: center;
+  width: 600px;
+  height: 1000px;
+  border-radius: 25px;
+  background-image: linear-gradient(rgb(53, 212, 0), rgb(157, 255, 0), rgb(53, 212, 0));
+  padding: 20px;
+  margin: auto;
+  margin-top: 150px;
+}
+.joypad {
+  width: 200px;
+  height: 200px;
+}
+.ab {
+  width: 300px;
+  height: 150px;
+  float: right;
+}
+.child {
+  display: inline-block;
+  padding: 2rem 2rem;
+  vertical-align: middle;
+}
+.controls {
+  padding-top: 100px;
+}
+#btngb {
+  color:rgb(22, 22, 22);
+  filter:drop-shadow(5px 10px 1px black);
+}
+.gbtitle {
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
+  color: white;
+  display: inline-block;
+  font-weight: lighter;
+  background-image: linear-gradient(black, rgb(46, 46, 46), black);
+}
+
+/* Style des boite de dialogue */
+
+.card-body {
+  height: 216px;
+}
+.modele {
+  color: white;
+}
+.card {
+  background-color: transparent;
+}

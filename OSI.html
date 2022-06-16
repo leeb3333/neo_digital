@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/22df674af3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle OSI</title>
+</head>
+<body>
+<!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">
+        <img src="./Neo_digital.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Neo Digital
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./about.html">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./FAQs.html">FAQs</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Voir plus
+         </a>
+         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <li><a class="dropdown-item" href="./concept.html">Quelques concepts</a></li>
+           <li><hr class="dropdown-divider"></li>
+           <li><a class="dropdown-item" href="./OSI.html">Modèle OSI</a></li>
+           <li><hr class="dropdown-divider"></li>
+           <li><a class="dropdown-item" href="./tcpip.html">Modèle TCP/IP</a></li>
+           <li><hr class="dropdown-divider"></li>
+           <li><a class="dropdown-item" href="./game.html">Jouer</a></li>
+         </ul>
+       </li>
+      </ul>
+    </div>
+</nav>
+<!-- NAVBAR -->
+<!--Modèle OSI-->
+<div class="flex-wrapper">
+    <main>
+        <div class="container-fluid p-5 titlebackground text-center">     
+        <h1 class="modele">Modèle OSI</h1>
+        </div> 
+        <div class="album py-5">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img width="100%" height="225" src="./physique.png"></img>
+      
+                  <div class="card-body">
+                    <p class="card-text">La couche responsable de tout l'équipement physique comme par exemple les routeurs et les fils réseau.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img width="100%" height="225" src="./liaison.png"></img>
+      
+                  <div class="card-body">
+                    <p class="card-text">Cette couche est responsable de la communication entre les différents réseaux mais localement  c'est-à-dire sur le même réseau. C'est ici que les paquets sont transformés et gérés dans le but de contrôler les erreurs et le traffic pour garantir le succès de la transmission.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img width="100%" height="225" src="./reseau.png"></img>
+      
+                  <div class="card-body">
+                    <p class="card-text">La couche réseau décompose les données sur l'ordinateur de l'envoyeur et les réassemble sur celle du receveur quand une communication est effectué sur deux réseau distinct. Sur un réseau local cette couche ne sert à rien</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img width="100%" height="225" src="./transport.png"></img>
+      
+                  <div class="card-body">
+                    <p class="card-text">Dans cette couche les données sont décomposées en plus petits morceaux dans le but d'accélérer le transfert mais aussi de le rendre plus efficace. De plus, chaque segment contient un contrôle d'erreur qui permet à la couche Session de rétablir la connexion si les segments (paquets) sont pas complétement envoyés au destinataire.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img width="100%" height="225" src="./session.png"></img>
+      
+                  <div class="card-body">
+                    <p class="card-text">Pour être en mesure de communiquer entre deux périphériques, une session doit être créer par une application. Cette session est propre à chaque utilisateur qui lui s'identifie sur le serveur.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img width="100%" height="225" src="./presentation.png"></img>
+      
+                  <div class="card-body">
+                    <p class="card-text">C'est ici que les données sont préparées ou formatées pour qu'elles soient affichées à l'utilisateur. Cette couche s'occupe aussi de la compression et de la décompression des données qui passe d'un périphérique A au périphérique B.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img width="100%" height="225" src="./application.png"></img>
+      
+                  <div class="card-body">
+                    <p class="card-text">Cette couche est celle qui communique directement avec l'utilisateur vous pouvez voir celle-ci comme le rendu final.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+
+              </div>
+
+             </div>
+            </div>
+          </div>
+        </div>
+    </main>    
+</div>
+<!--Modèle OSI-->     
+<!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><i class="fab fa-facebook-f"></i> </a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i class="fab fa-instagram"></i> </a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button"><i class="fab fa-linkedin-in"></i> </a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+          <p>
+          Engagé pour vous, engagé pour l'avenir. <br> -Neo Digital
+          </p>
+      </section>
+      <!-- Section: Text -->
+      <!--Section links-->
+      <ul class="nav justify-content-center border-top pt-3 mt-3">
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Accueil</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+          <li class="nav-item"><a href="./plan.html" class="nav-link px-2 text-muted">Plan de site</a></li>
+          <li class="nav-item"><a href="./FAQs.html" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-muted">À propos</a></li>
+      </ul>
+      <!--Section links-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="container-fluid p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="row">
+          <div class="col-6 text-start">
+          © 2022 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">Neo Digital</a>
+          </div>
+          <div class="col-6 text-end">
+          <a class="text-white" style="text-decoration: none">Navigateurs supportés: </a>
+          <a class="text-white"><i class="fab fa-chrome"></i></a>
+          <a class="text-white"><i class="fab fa-opera"></i></a>
+          <a class="text-white"><i class="fab fa-safari"></i></a>
+          <a class="text-white"><i class="fab fa-edge"></i></a>
+          <a class="text-white"><i class="fab fa-firefox"></i></a>
+          </div>
+      </div>
+      </div>
+      <!-- Copyright -->
+  </footer>
+<!-- Footer -->
+</div>   
+</body>
+</html>
